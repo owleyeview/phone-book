@@ -33,6 +33,17 @@ public class PhoneBookNode {
         this.next = next;
     }
 
+    // a null constructor
+    public PhoneBookNode() {
+        this.firstName = null;
+        this.lastName = null;
+        this.address = null;
+        this.city = null;
+        this.phoneNumber = null;
+        this.emailAddress = null;
+        this.next = null;
+    }
+
     public String getFirstName() {
         return firstName;
     }
