@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="added some comments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneBookMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="added some comments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665806301161</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added some comments">
+      <created>1666312515073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666312515073</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
