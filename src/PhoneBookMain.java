@@ -102,6 +102,6 @@ public class PhoneBookMain {
 
     // search the phone book list and print the entries with Seattle in the city field
     public static void displaySeattle(PhoneBookManager javaPages) {
-        javaPages.searchList("city", "Bellingham");
+        javaPages.searchList("city", "Seattle");
     }
 }

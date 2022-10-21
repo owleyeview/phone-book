@@ -59,7 +59,7 @@ public class PhoneBookManager {
         // match the search string against the string in the field
         switch (field) {
             case "city":
-                return (node.getCity().toLowerCase() == value.toLowerCase());
+                return (node.getCity().toLowerCase().equals(value.toLowerCase()));
         }
         return found;
     }
