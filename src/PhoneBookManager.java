@@ -35,10 +35,32 @@ public class PhoneBookManager {
         }
     }
 
+    // given a field name and search string, print out the matching phone book entries
+    public void searchList(String field, String value) {
+        if (head == null) { // no nodes in the list
+            System.out.println("!! No entries to display. Please add a new entry.");
+            return;
+        }
+        PhoneBookNode current = head;
+        if (search(current, field, value)) {
+            System.out.println(current);
+        }
+        while (current.next != null) {
+            current = current.next;
+            if (search(current, field, value)) {
+                System.out.println(current);
+            }
+        }
+    }
+
     // given a node, field name and search string, returns true if the string is found in the field
-    public boolean search(PhoneBookNode node, String field, String search) {
+    public boolean search(PhoneBookNode node, String field, String value) {
         boolean found = false;
         // match the search string against the string in the field
+        switch (field) {
+            case "city":
+                return (node.getCity().toLowerCase() == value.toLowerCase());
+        }
         return found;
     }
 

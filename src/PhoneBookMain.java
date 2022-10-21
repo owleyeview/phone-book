@@ -6,6 +6,11 @@ public class PhoneBookMain {
         Scanner s = new Scanner(System.in);
         PhoneBookManager javaPages = new PhoneBookManager();
 
+        PhoneBookNode person1 = new PhoneBookNode("Joe", "Schmoe", "123 Coal Valley Ln", "Bellingham", "360-555-1212", "yes@no.com");
+        javaPages.append(person1);
+        PhoneBookNode person2 = new PhoneBookNode("Jane", "Doe", "321 Gold Hill Rd", "Seattle", "555-555-1212", "no@yes.com");
+        javaPages.append(person2);
+
         displayIntroMessage();
         String command; // input variable
         boolean done = false; //  boolean flag
@@ -23,10 +28,10 @@ public class PhoneBookMain {
                     displayList(javaPages);
                     break;
                 case "b":
-                    displayBellingham();
+                    displayBellingham(javaPages);
                     break;
                 case "s":
-                    displaySeattle();
+                    displaySeattle(javaPages);
                     break;
                 case "q":
                     done = true;
@@ -51,7 +56,7 @@ public class PhoneBookMain {
     // displays the user menu
     public static void displayMenu() {
         System.out.println();
-        System.out.printf("(A)dd a new entry \n(M)odify an existing entry \n(D)isplay complete phone book list " +
+        System.out.print("(A)dd a new entry \n(M)odify an existing entry \n(D)isplay complete phone book list " +
                 "\n(B)ellingham phone book list \n(S)eattle phone book list \n(Q)uit \n");
         System.out.println();
         System.out.print("Enter a command from the list above: ");
@@ -91,12 +96,12 @@ public class PhoneBookMain {
         javaPages.printList();
     }
     // search the phone book list and print the entries with Bellingham in the city field
-    public static void displayBellingham() {
-
+    public static void displayBellingham(PhoneBookManager javaPages) {
+        javaPages.searchList("city", "Bellingham");
     }
 
     // search the phone book list and print the entries with Seattle in the city field
-    public static void displaySeattle() {
-
+    public static void displaySeattle(PhoneBookManager javaPages) {
+        javaPages.searchList("city", "Bellingham");
     }
 }
