@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 public class PhoneBookManager {
     PhoneBookNode head;
@@ -27,12 +27,12 @@ public class PhoneBookManager {
         int index = 1;  // a reference number for each entry
         System.out.println();
         System.out.printf("%3d. ", index);
-        System.out.println(current.toString());
+        System.out.println(current);
         while (current.next != null) {
             current = current.next;
             index++;
             System.out.printf("%3d. ", index);
-            System.out.println(current.toString());
+            System.out.println(current);
         }
     }
 
@@ -57,8 +57,18 @@ public class PhoneBookManager {
         boolean found = false;
         // match the search string against the string in the field
         switch (field) {
+            case "firstName":
+                return (node.getFirstName().equalsIgnoreCase(value));
+            case "lastName":
+                return (node.getLastName().equalsIgnoreCase(value));
+            case "address":
+                return (node.getAddress().equalsIgnoreCase(value));
             case "city":
-                return (node.getCity().toLowerCase().equals(value.toLowerCase()));
+                return (node.getCity().equalsIgnoreCase(value));
+            case "phoneNumber":
+                return (node.getPhoneNumber().equalsIgnoreCase(value));
+            case "emailAddress":
+                return (node.getEmailAddress().equalsIgnoreCase(value));
         }
         return found;
     }
@@ -93,7 +103,7 @@ public class PhoneBookManager {
 
     public PhoneBookNode merge(PhoneBookNode list1, PhoneBookNode list2) {
 
-        PhoneBookNode result = new PhoneBookNode();
+        PhoneBookNode result;
 
 
         // base cases of recursive function

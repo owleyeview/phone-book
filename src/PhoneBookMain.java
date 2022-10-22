@@ -24,7 +24,7 @@ public class PhoneBookMain {
                     addEntry(s, javaPages);
                     break;
                 case "m":
-                    modifyEntry(s);
+                    modifyEntry(s, javaPages);
                     break;
                 case "d":
                     displayList(javaPages);
@@ -86,10 +86,12 @@ public class PhoneBookMain {
     }
 
     // method to modify a phone book entry
-    public static void modifyEntry(Scanner s) {
+    public static void modifyEntry(Scanner s, PhoneBookManager javaPages) {
+        displayList(javaPages);
         System.out.println();
+        System.out.println("Enter the number of the entry to modify: ");
         // allow the user to select which entry to modify
-        // then display a menu that allows th user to select
+        // then display a menu that allows the user to select
         // which field of the entry to modify
     }
 
