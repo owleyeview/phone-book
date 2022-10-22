@@ -12,6 +12,8 @@ public class PhoneBookMain {
         javaPages.append(person2);
         PhoneBookNode person3 = new PhoneBookNode("Daryl", "Criss", "237 W Kellogg Rd", "Bellingham", "360-393-3739", "dcriss@whatcom.edu");
         javaPages.append(person3);
+        PhoneBookNode person4 = new PhoneBookNode("Ding", "Dong", "111 Northgate Wy", "Seattle", "250-393-3739", "hello@hi.com");
+        javaPages.append(person4);
 
         displayIntroMessage();
         String command; // input variable

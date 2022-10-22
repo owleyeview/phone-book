@@ -114,9 +114,8 @@ public class PhoneBookManager {
             return list1;
         }
 
-        // sort by first letter of last name
-        if (list1.getLastName().toLowerCase().charAt(0)
-                < list2.getLastName().toLowerCase().charAt(0)) {
+        // sort by last name
+        if (list1.getLastName().compareToIgnoreCase(list2.getLastName()) <= 0) {
             result = list1;
             result.next = merge(list1.next, list2);
         } else {
