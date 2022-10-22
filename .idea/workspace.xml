@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="added some comments">
+    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="fixed search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PhoneBookMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PhoneBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookManager.java" afterDir="false" />
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666312633259</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed search">
+      <created>1666314486032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666314486032</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,19 +145,20 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="more functionality" />
     <MESSAGE value="added some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some comments" />
+    <MESSAGE value="fixed search" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/PhoneBookMain.java</url>
-          <line>98</line>
-          <properties class="PhoneBookMain" method="displayBellingham">
+          <url>file://$PROJECT_DIR$/src/PhoneBookManager.java</url>
+          <line>67</line>
+          <properties class="PhoneBookManager" method="sortList">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
