@@ -1,3 +1,5 @@
+
+
 import java.util.*;
 public class PhoneBookMain {
 
@@ -6,16 +8,12 @@ public class PhoneBookMain {
         Scanner s = new Scanner(System.in);
         PhoneBookManager javaPages = new PhoneBookManager();
 
-        PhoneBookNode person1 = new PhoneBookNode("Joe", "Schmoe", "123 Coal Valley Ln", "Bellingham", "360-555-1212", "yes@no.com");
-        javaPages.append(person1);
-        PhoneBookNode person2 = new PhoneBookNode("Jane", "Doe", "321 Gold Hill Rd", "Seattle", "555-555-1212", "no@yes.com");
-        javaPages.append(person2);
-        PhoneBookNode person3 = new PhoneBookNode("Daryl", "Criss", "237 W Kellogg Rd", "Bellingham", "360-393-3739", "dcriss@whatcom.edu");
-        javaPages.append(person3);
-        PhoneBookNode person4 = new PhoneBookNode("Ding", "Dong", "111 Northgate Wy", "Seattle", "250-393-3739", "hello@hi.com");
-        javaPages.append(person4);
+        // Load generic phone book
+        loadTestNodes(javaPages);
 
+        // An intro message is displayed on program start
         displayIntroMessage();
+
         String command; // input variable
         boolean done = false; //  boolean flag
         do {
@@ -109,5 +107,17 @@ public class PhoneBookMain {
     // search the phone book list and print the entries with Seattle in the city field
     public static void displaySeattle(PhoneBookManager javaPages) {
         javaPages.searchList("city", "Seattle");
+    }
+
+    // given a PhoneBookManager list, loads test nodes
+    public static void loadTestNodes(PhoneBookManager javaPages) {
+        PhoneBookNode person1 = new PhoneBookNode("Joe", "Schmoe", "123 Coal Valley Ln", "Bellingham", "360-555-1212", "yes@no.com");
+        javaPages.append(person1);
+        PhoneBookNode person2 = new PhoneBookNode("Jane", "Doe", "321 Gold Hill Rd", "Seattle", "555-555-1212", "no@yes.com");
+        javaPages.append(person2);
+        PhoneBookNode person3 = new PhoneBookNode("Daryl", "Criss", "237 W Kellogg Rd", "Bellingham", "360-393-3739", "dcriss@whatcom.edu");
+        javaPages.append(person3);
+        PhoneBookNode person4 = new PhoneBookNode("Ding", "Dong", "111 Northgate Wy", "Seattle", "250-393-3739", "hello@hi.com");
+        javaPages.append(person4);
     }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="added other cases in the search method&#10;other code cleanup">
+    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="improved the sort, so it sorts by the whole name and not just the first letter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PhoneBookMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoneBookNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666415103058</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="improved the sort, so it sorts by the whole name and not just the first letter">
+      <created>1666416733839</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666416733839</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +169,7 @@
     <MESSAGE value="fixed search" />
     <MESSAGE value="simplified searchList&#10;added merge sort so the list is sorted after every append" />
     <MESSAGE value="added other cases in the search method&#10;other code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="added other cases in the search method&#10;other code cleanup" />
+    <MESSAGE value="improved the sort, so it sorts by the whole name and not just the first letter" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved the sort, so it sorts by the whole name and not just the first letter" />
   </component>
 </project>
