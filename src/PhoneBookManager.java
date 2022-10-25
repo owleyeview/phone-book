@@ -126,4 +126,20 @@ public class PhoneBookManager {
         return result;
     }
 
+    public int size() {
+        PhoneBookNode current = head;
+        if (current == null) {
+            return 0;
+        } else if (current.next == null) {
+            return 1;
+        } else {
+            int count = 1;
+            while (current.next != null) {
+                count++;
+                current = current.next;
+            }
+            return count;
+        }
+    }
+
 }
