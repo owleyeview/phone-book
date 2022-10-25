@@ -126,6 +126,7 @@ public class PhoneBookManager {
         return result;
     }
 
+    // returns the number of nodes in the list
     public int size() {
         PhoneBookNode current = head;
         if (current == null) {

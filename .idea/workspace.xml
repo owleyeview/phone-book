@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="added loadTestNodes method in PhoneBookMain and added more comments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneBookMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookMain.java" afterDir="false" />
+    <list default="true" id="e5e411d4-fb81-4ec0-adcc-7bb5a2702135" name="Changes" comment="added modifyEntry method">
       <change beforePath="$PROJECT_DIR$/src/PhoneBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBookManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666637482845</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added modifyEntry method">
+      <created>1666668077600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666668077600</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +183,7 @@
     <MESSAGE value="added other cases in the search method&#10;other code cleanup" />
     <MESSAGE value="improved the sort, so it sorts by the whole name and not just the first letter" />
     <MESSAGE value="added loadTestNodes method in PhoneBookMain and added more comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added loadTestNodes method in PhoneBookMain and added more comments" />
+    <MESSAGE value="added modifyEntry method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added modifyEntry method" />
   </component>
 </project>
