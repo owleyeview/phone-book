@@ -1,5 +1,12 @@
+/*
+Rashaan, Derek, Cece and Nathan
+10/25/2022
+CS 145
+Phone Book Assignment
+PhoneBookManager.java
+ */
 
-
+// A class for creating and managing a linked list of phone book nodes
 public class PhoneBookManager {
     PhoneBookNode head;
 

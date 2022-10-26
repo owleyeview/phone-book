@@ -1,5 +1,12 @@
+/*
+Rashaan, Derek, Cece and Nathan
+10/25/2022
+CS 145
+Phone Book Assignment
+PhoneBookNode.java
+ */
 
-
+// A class for creating node objects for a phone book linked list
 public class PhoneBookNode {
 
     // Object fields
@@ -103,7 +110,7 @@ public class PhoneBookNode {
     }
 
     public String toString() {
-        return this.firstName + " " + this.lastName + " | " + this.address + " " + this.city + " | " +
-                this.phoneNumber + " | " + this.emailAddress;
+        return this.firstName + " " + this.lastName + " | " + this.address
+                + " " + this.city + " | " + this.phoneNumber + " | " + this.emailAddress;
     }
 }

@@ -1,8 +1,14 @@
+/*
+Rashaan, Derek, Cece and Nathan
+10/25/2022
+CS 145
+Phone Book Assignment
+PhoneBookMain.java
+ */
 
-
+// A program for creating, viewing and manipulating a phone book linked list
 import java.util.*;
 public class PhoneBookMain {
-
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -40,7 +46,8 @@ public class PhoneBookMain {
                     done = true;
                     break;
                 default: // valid input commands not found
-                    System.out.println("Invalid command. Select from the commands above.");
+                    System.out.println("Invalid command. " +
+                            "Select from the commands above.");
                     break;
             }
         } while (!done); // end of do while loop 
@@ -59,8 +66,10 @@ public class PhoneBookMain {
     // displays the user menu
     public static void displayMenu() {
         System.out.println();
-        System.out.print("(A)dd a new entry \n(M)odify an existing entry \n(D)isplay complete phone book list " +
-                "\n(B)ellingham phone book list \n(S)eattle phone book list \n(Q)uit \n");
+        System.out.print("(A)dd a new entry \n(M)odify an existing entry " +
+                "\n(D)isplay complete phone book list " +
+                "\n(B)ellingham phone book list \n(S)eattle phone book list " +
+                "\n(Q)uit \n");
         System.out.println();
         System.out.print("Enter a command from the list above: ");
     }
@@ -82,7 +91,8 @@ public class PhoneBookMain {
         System.out.print("Enter an EMAIL ADDRESS: ");
         String emailAddress = s.nextLine();
         System.out.println("--Entry created--");
-        PhoneBookNode newEntry = new PhoneBookNode(firstName, lastName, address, city, phoneNumber, emailAddress);
+        PhoneBookNode newEntry = new PhoneBookNode(firstName, lastName,
+                address, city, phoneNumber, emailAddress);
         javaPages.append(newEntry);
     }
 
@@ -129,7 +139,8 @@ public class PhoneBookMain {
                         current = current.next;
                     }
                     // user menu for modifications 
-                    System.out.println("(F)irst name, (L)ast name, (A)ddress, (C)ity, (P)hone number, (E)mail address");
+                    System.out.println("(F)irst name, (L)ast name, (A)ddress, " +
+                            "(C)ity, (P)hone number, (E)mail address");
                     System.out.println("Select a field to modify:  ");
 
                     command = s.nextLine().toLowerCase();  // accept an input command
@@ -166,7 +177,8 @@ public class PhoneBookMain {
                             current.setEmailAddress(emailAddress);
                             break;
                         default: // valid input commands not found
-                            System.out.println("Invalid command. Select from the commands above.");
+                            System.out.println("Invalid command. " +
+                                    "Select from the commands above.");
                             break;
                     }
                     done = true;
@@ -180,6 +192,7 @@ public class PhoneBookMain {
     public static void displayList(PhoneBookManager javaPages) {
         javaPages.printList();
     }
+
     // search the phone book list and print the entries with Bellingham in the city field
     public static void displayBellingham(PhoneBookManager javaPages) {
         System.out.println();
