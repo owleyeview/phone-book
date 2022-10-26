@@ -19,6 +19,7 @@ public class PhoneBookMain {
         do {
             displayMenu();
             command = s.nextLine().toLowerCase();  // accept an input command
+            // user command options 
             switch (command) {
                 case "a":
                     addEntry(s, javaPages);
@@ -42,7 +43,7 @@ public class PhoneBookMain {
                     System.out.println("Invalid command. Select from the commands above.");
                     break;
             }
-        } while (!done);
+        } while (!done); // end of do while loop 
     }
 
     // introduction to the program
@@ -88,21 +89,23 @@ public class PhoneBookMain {
     // method to modify a phone book entry
     public static void modifyEntry(Scanner s, PhoneBookManager javaPages) {
         String command;
-        boolean done = false;
+        boolean done = false;// define boolean for do while loop
         displayList(javaPages);
         System.out.println();
         System.out.print("Enter the number of the entry to modify: ");
         System.out.println();
         int index = s.nextInt();
+        // loop to re-prompt and check for user input if an invalid value is given
         while (index < 1 || index > javaPages.size()) {
             System.out.println("Not a valid index! Try again...");
             index = s.nextInt();
         }
-        PhoneBookNode current = new PhoneBookNode();
+        PhoneBookNode current = new PhoneBookNode(); 
         current.next = javaPages.head;
+        // user option menu 
         System.out.print("(D)elete the entry or (M)odify a field?");
         String command2;
-        do {
+        do { // beginning of do while loop to continuously run through menu
             command2 = s.nextLine().toLowerCase();
             switch (command2) {
                 case "d":
@@ -119,16 +122,18 @@ public class PhoneBookMain {
                         return;
                     }
                     //break;
-                case "m":
+                case "m": // revert to menu 
 
                     for (int i = 0; i < index; i++) {
 
                         current = current.next;
                     }
+                    // user menu for modifications 
                     System.out.println("(F)irst name, (L)ast name, (A)ddress, (C)ity, (P)hone number, (E)mail address");
                     System.out.println("Select a field to modify:  ");
 
                     command = s.nextLine().toLowerCase();  // accept an input command
+                    // user modification commands 
                     switch (command) {
                         case "f":
                             System.out.print("New first name:");
